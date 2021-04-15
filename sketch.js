@@ -84,13 +84,14 @@ function draw() {
   function keyPressed(){
 	if(keyCode === LEFT_ARROW){
 		helicopterSprite.position.x -= 5;
-		packageSprite.position.x -= 5;
-		// Matter.Body.translate(packageBody, {x:-5,y:0})
+		packageBody.position.x -= 5;
+		
+		//Matter.Body.translate(packageBody, {x:-5,y:0})
 		 
 	  }
 	  if(keyCode === RIGHT_ARROW){
 		helicopterSprite.position.x +=5;
-		packageSprite.position.x += 5;
+		packageBody.position.x += 5;
 		// Matter.Body.translate(packageBody, {x:5,y:0})
 		  
 	  }
